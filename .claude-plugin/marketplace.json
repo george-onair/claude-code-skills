@@ -1,0 +1,23 @@
+{
+  "name": "george-onair-skills",
+  "owner": {
+    "name": "George O'Nair",
+    "url": "https://github.com/george-onair"
+  },
+  "metadata": {
+    "description": "Free local-first Agent Skills: SKILL.md authoring, one-tool MCP scaffolding, and license preflight.",
+    "version": "0.3.0"
+  },
+  "plugins": [
+    {
+      "name": "starter",
+      "displayName": "George O'Nair Skills Starter",
+      "source": "./plugins/starter",
+      "description": "Free local-first skills for debugging SKILL.md discovery, scaffolding one stdio MCP tool, and preflighting repository license signals.",
+      "version": "0.3.0",
+      "repository": "https://github.com/george-onair/claude-code-skills",
+      "license": "MIT",
+      "keywords": ["agent-skills", "claude-code", "mcp", "skill-authoring", "license-preflight"]
+    }
+  ]
+}

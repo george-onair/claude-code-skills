@@ -1,0 +1,12 @@
+{
+  "name": "starter",
+  "description": "Free local-first skills: debug SKILL.md discovery, scaffold one stdio MCP tool, and preflight repository license signals.",
+  "version": "0.3.0",
+  "author": {
+    "name": "George O'Nair",
+    "url": "https://github.com/george-onair"
+  },
+  "repository": "https://github.com/george-onair/claude-code-skills",
+  "license": "MIT",
+  "keywords": ["agent-skills", "claude-code", "mcp", "skill-authoring", "license-preflight"]
+}
