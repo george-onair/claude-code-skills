@@ -1,6 +1,38 @@
 # George O'Nair's Agent Skills Starter
 
-Free, small, local-first [Agent Skills](https://agentskills.io/specification) for coding agents.
+**Three small, free, local-first skills for coding agents: fix a `SKILL.md` your agent ignores, scaffold a minimal MCP server, and check a repo's license before you reuse it.**
+
+- **Who it's for:** developers writing or installing Agent Skills for Claude Code, Codex, Cursor or similar hosts.
+- **Requires:** Python 3 (standard library only). No API key, no cloud service. MIT licensed.
+
+## 30-second quickstart
+
+```bash
+pip install git+https://github.com/george-onair/claude-code-skills.git
+repo-preflight --repo /absolute/path/to/your-repo
+```
+
+Example output (trimmed), from running it against the MIT-licensed [george-mode-skills](https://github.com/george-onair/george-mode-skills) repo:
+
+```json
+{
+  "mode": "local_repo",
+  "license_key": "mit",
+  "license_verdict": "permissive",
+  "license_source": "license_file",
+  "distillation_verdict": "DISTILL"
+}
+```
+
+Claude Code users can install all three skills as a plugin:
+
+```text
+/plugin marketplace add george-onair/claude-code-skills
+/plugin install starter@george-onair-skills
+```
+
+**Related:** [george-onair/george-mode-skills](https://github.com/george-onair/george-mode-skills) is a larger skill set that makes agents report separate evidence (file exists / checks pass / real run / external state) instead of a single "done".
+**Updates:** [@George_ONair on X](https://x.com/George_ONair).
 
 **Start here if one of these is your problem:**
 
